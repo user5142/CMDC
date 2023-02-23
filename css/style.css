@@ -1,0 +1,273 @@
+/* Universal */
+
+body {
+    background-color: #202224;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Tahoma, sans-serif;
+    color: #D2D3D7;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Header */
+
+.logo {
+    width: 8.5rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 4rem;
+    padding: 0 2rem;
+}
+
+header ul {
+    display: flex;
+    flex-flow: row;
+    gap: 5rem;
+}
+
+header ul li a {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.1rem;
+    color: #D2D3D7;
+}
+
+.search-icon {
+    width: 2.2rem;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 955px) {
+    header ul {
+        display: none;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: inline;
+        width: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        padding: 0 1rem;
+    }
+}
+
+/* Hero */
+
+.hero-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 42rem;
+    background-image: url(../images/central-mass-foliage.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    gap: 1.5rem;
+    max-width: 40rem;
+    padding: 0 5%;
+}
+
+.button {
+    min-width: 25%;
+    padding: .25rem .5rem;
+    margin: 0 auto;
+    border: .15rem solid #D2D3D7;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #D2D3D7;
+}
+
+.button h3:hover {
+    color: #202224;
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-section {
+        height: 30rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Events */
+
+.events-header {
+    text-align: center;
+    padding: 6rem 5% 0;
+    background-color: #313237;
+}
+
+.events-header h2 {
+    padding-bottom: 1rem;
+}
+
+.event-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 5% 8rem;
+    background-color: #313237;
+}
+
+.event-card {
+    border: 1px solid #585B63;
+    border-radius: 10px;
+    width: 25rem;
+    padding: 2rem;
+    background-color: #202224;
+}
+
+.event-card img {
+    max-width: 100%;
+}
+
+.event-card h3 {
+    font-weight: bold;
+}
+
+.event-card-text {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding: 1rem 0 0 0;
+}
+
+.event-date {
+    border: 1px solid #585B63;
+    border-radius: 10px; 
+    width: fit-content;
+    padding: .5rem .5rem;
+    margin-top: .5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .events-header {
+        padding: 4rem 5% 0;
+    }
+
+    .event-card {
+        padding: 1rem;
+    }
+}
+
+/* Quote */
+
+.quote-section {
+    margin: 0 auto;
+    padding: 5rem 5%;
+    max-width: 60rem;
+}
+
+.quote-section h3 {
+    padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .quote-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Pictures */
+
+.pictures-header {
+    text-align: center;
+    padding: 6rem 5% 3rem;
+    background-color: #313237;
+}
+
+.pictures-section {
+    display: flex;
+    justify-content: center;
+    background-color: #313237;
+    padding-bottom: 8rem;
+}
+
+.pictures-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 70rem;
+    padding: 0 5%;
+}
+
+.picture {
+    max-width: 30rem;
+}
+
+.pictures-container img {
+    max-width: 100%;
+}
+
+/* Contact */
+
+.contact-container {
+    text-align: center;
+    padding: 5rem 5%;
+}
+
+.contact-logo {
+    width: 10rem;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding-bottom: 2rem;
+}
